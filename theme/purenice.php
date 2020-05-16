@@ -92,6 +92,7 @@
         }
         
     </style>
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
 </head>
 
 <body>
@@ -1269,4 +1270,16 @@
 <?php } ?>
 </script>
 <script src="//unpkg.zhimg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+<div id="vcomments"></div>
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'yMUHppYNo94wWP6TMXbeBImi-gzGzoHsz',
+		appKey: 'bnItPUN9zHYmlO8yaPPv3AE3',
+		avatar: 'identicon',
+		placeholder: 'Just go go',
+		visitor: true,
+		recordIP: true
+	})
+</script>
 </html>
