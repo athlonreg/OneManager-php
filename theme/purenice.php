@@ -193,6 +193,18 @@
                     <input id="upload_file" type="file" name="upload_filename" value="<?php echo getconstStr('FileSelected'); ?>">
                     <input id="upload_submit" onclick="preup();" value="<?php echo getconstStr('Upload'); ?>" type="button">
                 </div>
+		<div id="vcomments"></div>
+		<script>
+			new Valine({
+				el: '#vcomments',
+				appId: 'yMUHppYNo94wWP6TMXbeBImi-gzGzoHsz',
+				appKey: 'bnItPUN9zHYmlO8yaPPv3AE3',
+				avatar: 'identicon',
+				placeholder: 'Just go go',
+				visitor: true,
+				recordIP: true
+			})
+		</script>
 <?php } else {
         if ($_SERVER['ishidden']<4) {
             if (isset($files['error'])) {
@@ -1270,16 +1282,4 @@
 <?php } ?>
 </script>
 <script src="//unpkg.zhimg.com/ionicons@4.4.4/dist/ionicons.js"></script>
-<div id="vcomments"></div>
-<script>
-	new Valine({
-		el: '#vcomments',
-		appId: 'yMUHppYNo94wWP6TMXbeBImi-gzGzoHsz',
-		appKey: 'bnItPUN9zHYmlO8yaPPv3AE3',
-		avatar: 'identicon',
-		placeholder: 'Just go go',
-		visitor: true,
-		recordIP: true
-	})
-</script>
 </html>
