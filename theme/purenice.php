@@ -424,20 +424,22 @@
     } ?>
             </div>
         </div>
+        <div class="list-container">
+            <div id="vcomments"></div>
+            <script>
+                new Valine({
+                    el: '#vcomments',
+                    appId: 'yMUHppYNo94wWP6TMXbeBImi-gzGzoHsz',
+                    appKey: 'bnItPUN9zHYmlO8yaPPv3AE3',
+                    avatar: 'identicon',
+                    placeholder: 'Just go go',
+                    visitor: true,
+                    recordIP: true
+                })
+            </script>
+        </div>
     </div>
 <?php } ?>
-    <div id="vcomments" class="list-table"></div>
-    <script>
-        new Valine({
-            el: '#vcomments',
-            appId: 'yMUHppYNo94wWP6TMXbeBImi-gzGzoHsz',
-            appKey: 'bnItPUN9zHYmlO8yaPPv3AE3',
-            avatar: 'identicon',
-            placeholder: 'Just go go',
-            visitor: true,
-            recordIP: true
-        })
-    </script>
     <div id="mask" class="mask" style="display:none;"></div>
 <?php
     if ($_SERVER['admin']) {
