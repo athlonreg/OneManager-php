@@ -1646,7 +1646,7 @@ function EnvOpt($needUpdate = 0)
     } else {
         $html .= '
 <form name="updateform" action="" method="post">
-    <input type="text" name="auth" placeholder="auth" value="qkqpttgf">
+    <input type="text" name="auth" placeholder="auth" value="athlonreg">
     <input type="text" name="project" placeholder="project" value="OneManager-php">
     <button onclick="querybranchs();return false">'.getconstStr('QueryBranchs').'</button>
     <!--<input type="text" name="branch" placeholder="branch" value="master">-->
