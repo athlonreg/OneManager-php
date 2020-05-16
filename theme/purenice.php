@@ -426,7 +426,7 @@
         </div>
     </div>
 <?php } ?>
-    <div id="vcomments"></div>
+    <div id="vcomments" class="list-table"></div>
     <script>
         new Valine({
             el: '#vcomments',
